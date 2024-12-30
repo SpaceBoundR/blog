@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on 电子荒原</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on 电子荒原</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy;召唤兽，&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 22 Sep 2019 20:54:15 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/linux/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>自动输入剪贴板中的内容</title>
+      <link>http://localhost:1313/2019/09/22/klipper-autotype/</link>
+      <pubDate>Sun, 22 Sep 2019 20:54:15 +0800</pubDate>
+      
+      <guid>http://localhost:1313/2019/09/22/klipper-autotype/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;值此佳节之际，为了给伟大祖国献礼，让几个VPS炸成烟花是必不可少的庆祝活动。于是，我搭在Google Cloud Platform上的V2RAY理所当然地连不上了。&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;正好上次薅的羊毛也快要过期了，又到了交保护费的时间。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其实之前我有两页关于VPS（价格）的笔记，不过计划赶不上变化，今天看到了一个叫Veesp的公司，很便宜，而且速度居然也还不错。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;惟一的缺点是，&lt;del&gt;我买不到红墨水&lt;/del&gt;那里的终端noVNC不支持粘贴。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以上是（无关紧要的）背景。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;details&gt;
+&lt;summary&gt;
+  &lt;h4 class=&#34;inline&#34;&gt;
+    附：Veesp的测速情况
+  &lt;/h4&gt;
+&lt;/summary&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/veesp-speedtest.png&#34; alt=&#34;北京联通表示情绪稳定&#34;&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;针对noVNC的问题，根据&lt;a href=&#34;https://forum.proxmox.com/threads/novnc-copy-paste-not-works.19773/#post-101013&#34;&gt;这个帖子&lt;/a&gt;，可以用&lt;code&gt;xdotool&lt;/code&gt;来解决。&lt;/p&gt;
+&lt;p&gt;现在我用的KDE自带剪贴板管理程序&lt;code&gt;Klipper&lt;/code&gt;，能够配置自定义动作处理剪贴板中的内容。这里的动作是&lt;code&gt;xdotool type &#39;%s&#39;&lt;/code&gt;，如图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/klipper.png&#34; alt=&#34;setting&#34;&gt;&lt;/p&gt;
+&lt;p&gt;另外，在我这里&lt;code&gt;在当前剪贴板上手动执行动作&lt;/code&gt;的快捷键&lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;R&lt;/kbd&gt;似乎有冲突，我改成了&lt;kbd&gt;Ctrl+Shift+Alt+R&lt;/kbd&gt;。&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;之后在noVNC界面上按刚才的快捷键就行。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;来自19-10-4的更新：俄罗斯IP被某个熊猫网站（e-h）屏蔽了……我就随口一说。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;具体地说，是在北京联通的4G网络，协议是WS+TLS，而且并不是永封，截至发稿前又可以连接了。在同个服务器上的$$被封得更彻底一些。&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;其实我还有点期待&lt;code&gt;&amp;lt;kbd&amp;gt;&lt;/code&gt;标签能出个什么特殊格式呢……&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>震惊！为了在Windows上访问EXT4分区，他竟然做出了这样的事！</title>
+      <link>http://localhost:1313/2019/03/02/hard-way-for-ext4-on-windows/</link>
+      <pubDate>Sat, 02 Mar 2019 23:19:02 +0800</pubDate>
+      
+      <guid>http://localhost:1313/2019/03/02/hard-way-for-ext4-on-windows/</guid>
+      <description>&lt;p&gt;呃……原谅这次的标题党，但我觉得这次自己的操作实在是太蠢了。&lt;/p&gt;
+&lt;p&gt;事情是这样的，作为一个半吊子，我的电脑上同时有Windows 10和Manjaro Linux两个操作系统，也就有了从Windows上访问Ext4分区的要求。大约在一年之前，这个要求可以用&lt;a href=&#34;https://www.ext2fsd.com/&#34;&gt;Ext2fsd&lt;/a&gt;来满足，可是一年过去，它已经无法识别新的Ext4版本了。&lt;/p&gt;
+&lt;p&gt;于是，我……我做了一个linux虚拟机来帮我读这个分区。&lt;/p&gt;
+&lt;p&gt;具体来说，VirtualBox支持将单独的分区视为虚拟磁盘&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;。你需要在 &lt;strong&gt;具有管理员权限&lt;/strong&gt; 的命令提示符中运行：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;VBoxManage internalcommands createrawvmdk -filename &amp;#34;C:\Users\&amp;lt;user_name&amp;gt;\VirtualBox VMs\&amp;lt;VM_folder_name&amp;gt;\&amp;lt;file_name&amp;gt;.vmdk&amp;#34; -rawdisk \\.\PhysicalDrive0 -partitions 1,5 -relative
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这个程序大概在VirtualBox的安装目录下，磁盘号和windows的“磁盘管理”程序一致，分区号可以用下面的命令获得。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;VBoxManage internalcommands listpartitions -rawdisk \\.\PhysicalDrive0
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;之后，&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;同样是用 &lt;strong&gt;管理员权限&lt;/strong&gt; 运行VirtualBox&lt;/li&gt;
+&lt;li&gt;把网卡模式改为桥接&lt;/li&gt;
+&lt;li&gt;挂载刚才生成的VMDK文件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;在另一个虚拟磁盘上&lt;/strong&gt; 安装Linux（这里我用的是Alpine Linux Extended）&lt;/li&gt;
+&lt;li&gt;设置Samba&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;就可以在宿主机上用网络硬盘访问Ext4分区了。&lt;/p&gt;
+&lt;p&gt;而且能够收获一次反思：我为什么要浪费宝贵的时间干这个？&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.virtualbox.org/manual/ch09.html#rawdisk&#34;&gt;https://www.virtualbox.org/manual/ch09.html#rawdisk&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html&#34;&gt;https://www.serverwatch.com/server-tutorials/using-a-physical-hard-drive-with-a-virtualbox-vm.html&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server&#34;&gt;https://wiki.alpinelinux.org/wiki/Setting_up_a_samba-server&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>好耶，是新电脑</title>
+      <link>http://localhost:1313/2019/02/28/new-computer/</link>
+      <pubDate>Thu, 28 Feb 2019 20:36:10 +0800</pubDate>
+      
+      <guid>http://localhost:1313/2019/02/28/new-computer/</guid>
+      <description>&lt;details&gt;
+&lt;summary&gt;
+  &lt;h4 class=&#34;inline&#34;&gt;
+    配置单
+  &lt;/h4&gt;
+&lt;/summary&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU：R5-2600&lt;/li&gt;
+&lt;li&gt;主板：微星b450m mortar，￥1595&lt;/li&gt;
+&lt;li&gt;散热：
+&lt;ul&gt;
+&lt;li&gt;CPU风扇：先马冰雪130，￥99&lt;/li&gt;
+&lt;li&gt;先马游戏风暴，￥13.9×3&lt;/li&gt;
+&lt;li&gt;乔思伯日食plus-RGB版，￥49&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;内存：威刚XPG-Z1 3000MHz，8G×2，共￥748&lt;/li&gt;
+&lt;li&gt;显卡：铭瑄RTX 2060 TurboX2 6G V2，￥2299&lt;/li&gt;
+&lt;li&gt;固态：海康威视 C2000，￥359&lt;/li&gt;
+&lt;li&gt;机箱：TT 启航者F1，￥139&lt;/li&gt;
+&lt;li&gt;电源：先马金牌500W，￥249&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;合计：￥5578.7&lt;/p&gt;
+&lt;/details&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2017年的fontconfig设置</title>
+      <link>http://localhost:1313/2017/10/29/2017-10-29-fontconfig-for-7012/</link>
+      <pubDate>Sun, 29 Oct 2017 13:40:50 +0800</pubDate>
+      
+      <guid>http://localhost:1313/2017/10/29/2017-10-29-fontconfig-for-7012/</guid>
+      <description>&lt;p&gt;都7012年了linux还要自己设置字体……&lt;/p&gt;
+&lt;p&gt;不过思源（Noto）系列字体真的是开源界的福音，字重多，字符全，自带hinting，长得还漂亮，换上以后整个系统都显得高级起来了～&lt;/p&gt;
+&lt;p&gt;为了获得“高级感”，首先你需要安装&lt;code&gt;noto-fonts&lt;/code&gt;和&lt;code&gt;noto-fonts-cjk&lt;/code&gt;。因为是7012年，中文字体里自带的英文字符也不算太丑，所以不需要像&lt;a href=&#34;https://wiki.archlinux.org/index.php/Font_Configuration/Chinese_Font_Configurations_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#Windows.C2.AE.E6.98.BE.E7.A4.BA.E6.95.88.E6.9E.9C.E7.9A.84.E5.AD.97.E4.BD.93.E5.8F.82.E8.80.83.E9.85.8D.E7.BD.AE&#34;&gt;ArchWiki&lt;/a&gt;和&lt;a href=&#34;https://ohmyarch.github.io/2017/01/15/Linux%E4%B8%8B%E7%BB%88%E6%9E%81%E5%AD%97%E4%BD%93%E9%85%8D%E7%BD%AE%E6%96%B9%E6%A1%88/&#34;&gt;这篇博文&lt;/a&gt;一样，分别定义中文和英文。全用Noto就好！（而且，分别定义的方法在chrome上有些小问题……）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;~/.config/fontconfig/fonts.conf&lt;/code&gt;的内容附在&lt;a href=&#34;https://gist.github.com/heyeshuang/03d69c1823b8cf769819d36b34f34f71&#34;&gt;这里&lt;/a&gt;，保存之后用&lt;code&gt;fc-cache --force --verbose&lt;/code&gt;更新字体缓存就行了。&lt;/p&gt;
+&lt;h2 id=&#34;接下来是截图时间&#34;&gt;接下来是截图时间：&lt;/h2&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/font/5.png&#34; width=&#34;50%&#34;&gt;&lt;figcaption&gt;
+      &lt;h4&gt;这才是真正的宋体&lt;/h4&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/font/3.png&#34; width=&#34;50%&#34;&gt;&lt;figcaption&gt;
+      &lt;h4&gt;在正文也毫无压力&lt;/h4&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/font/4.png&#34; width=&#34;50%&#34;&gt;&lt;figcaption&gt;
+      &lt;h4&gt;还有这个light字重&lt;/h4&gt;
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;题外话，中文可用的字体实在是太少了。因为&lt;code&gt;SimSun&lt;/code&gt;太渣，windows下的中文连个可用的&lt;code&gt;serif&lt;/code&gt;字体都没有，每天只能对着呆板的雅黑干瞪眼……&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>邪恶的Archlinux</title>
+      <link>http://localhost:1313/2013/05/17/%E6%B7%B7%E4%B9%B1%E9%82%AA%E6%81%B6%E7%9A%84archlinux/</link>
+      <pubDate>Fri, 17 May 2013 07:47:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2013/05/17/%E6%B7%B7%E4%B9%B1%E9%82%AA%E6%81%B6%E7%9A%84archlinux/</guid>
+      <description>&lt;p&gt;前几天archlinux更新后无法启动，提示”/bin/systemd not exist”，于是乖乖等官网说明，顺理成章的没等到。于是开始google，在g+发现一条线索：那群变态好像把&lt;code&gt;/bin/systemd&lt;/code&gt;移到&lt;code&gt;/usr/lib/systemd/systemd&lt;/code&gt;里了……\&lt;/p&gt;
+&lt;p&gt;于是解决方案是：在grub按e，把&lt;code&gt;/bin/systemd&lt;/code&gt;换成&lt;code&gt;/usr/lib/systemd/systemd&lt;/code&gt;就行了；进来之后，还要改&lt;code&gt;/etc/default/grub&lt;/code&gt;，以及&lt;code&gt;grub-mkconfig&lt;/code&gt;……\&lt;/p&gt;
+&lt;p&gt;所以说你们折腾这个到底是为什么呀？觉得系统太稳定还是想玩弄可怜的系统管理员？？\&lt;/p&gt;
+&lt;p&gt;用一张图表达我的感想：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/evil.png&#34; alt=&#34;evil&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>如果你像我一样主力使用xfce但又觉得GNOME3也许会变得好一点于是安装之后才发现果然还是无法接受</title>
+      <link>http://localhost:1313/2013/03/29/%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E4%B8%BB%E5%8A%9B%E4%BD%BF%E7%94%A8xfce%E4%BD%86%E5%8F%88%E8%A7%89%E5%BE%97gnome3%E4%B9%9F%E8%AE%B8%E4%BC%9A%E5%8F%98%E5%BE%97%E5%A5%BD/</link>
+      <pubDate>Fri, 29 Mar 2013 07:21:48 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2013/03/29/%E5%A6%82%E6%9E%9C%E4%BD%A0%E5%83%8F%E6%88%91%E4%B8%80%E6%A0%B7%E4%B8%BB%E5%8A%9B%E4%BD%BF%E7%94%A8xfce%E4%BD%86%E5%8F%88%E8%A7%89%E5%BE%97gnome3%E4%B9%9F%E8%AE%B8%E4%BC%9A%E5%8F%98%E5%BE%97%E5%A5%BD/</guid>
+      <description>&lt;p&gt;这时全部删除GNOME却发现xfce变得特别丑陋的原因是GNOME-settings-daemon与xfdsetting冲突于是后者被自动关闭了。只要重新启动xfdsetting，然后去把g-s-d的自启关掉就好。\&lt;/p&gt;
+&lt;p&gt;题外话，lightdm设置好的话十分nice，有空放一份配置文件上来。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Texlive 在archlinux上的安装，以及中文字体的设置</title>
+      <link>http://localhost:1313/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</link>
+      <pubDate>Fri, 21 Dec 2012 16:38:48 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/12/22/texlive-%E5%9C%A8archlinux%E4%B8%8A%E7%9A%84%E5%AE%89%E8%A3%85%EF%BC%8C%E4%BB%A5%E5%8F%8A%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E7%9A%84%E8%AE%BE%E7%BD%AE/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;texmacs已经不能满足我了！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其实是想着反正这个软件已经挺难用了，要不就直接去挑战大魔王吧！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;然后发现大魔王令人绝望的实力&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;然后用S/L大法加google作弊器成功——安装了字体&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;结果我还是不会用tex&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所以我下了lyx&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;#期末考试就要到了我还在弄这个#&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;#挂科预感up（大）#&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我说这个又没人爱听&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;反正也不会有人来&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;fin&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;骗你的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里不是只有一个活人吗……不会有什么“你”在啦&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;好吧让我&lt;del&gt;们&lt;/del&gt;进入正题。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其实我一开始以为直接pacman就好了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;但是后来我发现自己太甜了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;于是我就下了texlive的镜像&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;后来发现直接安可能也可以？？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;按照&lt;a href=&#34;http://www.road2stat.com/cn/tex/archtex.html&#34;&gt;这里&lt;/a&gt;的安装方式\&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;su –
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget -c http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2012.iso
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir /mnt/tex
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mount -o loop texlive2012.iso /mnt/tex/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#366&#34;&gt;cd&lt;/span&gt; /mnt/tex/
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./install-tl
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;vim /etc/profile &lt;span style=&#34;color:#09f;font-style:italic&#34;&gt;#在这里要设置全局变量PATH，加上/usr/local/texlive/2012/bin/i386-linux，否则找不到tlmgr……&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tlmgr option repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tlmgr update –self
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tlmgr update –all
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;umount /mnt/tex
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm -rf /mnt/tex
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然后发现没有字体……&lt;/p&gt;
+&lt;p&gt;然后在&lt;a href=&#34;http://tug.org/texlive/doc/texlive-zh-cn/texlive-zh-cn.pdf&#34;&gt;这里&lt;/a&gt;发现要：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;将 texlive-fontconfig.conf 文件复制到
+/etc/fonts/conf.d/09-texlive.conf，
+运行 fc-cache -fsv 以root的名义&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;接下来xetex就会提示你缺少字体了，是不是很高兴？&lt;/p&gt;
+&lt;p&gt;——才怪咧！&lt;/p&gt;
+&lt;p&gt;然后，你要用yaourt安装ttf-ms-fonts-zh_cn这个包——&lt;/p&gt;
+&lt;p&gt;然后fc-list|grep sim和fc-list|grep SIM各一次——&lt;/p&gt;
+&lt;p&gt;然后&lt;code&gt;sudo vim /usr/local/texlive/2012/texmf-dist/tex/latex/ctex/fontset/ctex-xecjk-winfonts.def&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;把里面奇怪的[SIMKAI.TTF]和[SIMFANG.TTF]都换成刚才写着“楷体”和“仿宋”行中的英文名，我的是KaiTi_GB2312和FangSong_GB2312&lt;/p&gt;
+&lt;p&gt;编译用例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-tex&#34; data-lang=&#34;tex&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;\documentclass&lt;/span&gt;&lt;span style=&#34;color:#366&#34;&gt;{&lt;/span&gt;ctexart&lt;span style=&#34;color:#366&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;\begin&lt;/span&gt;&lt;span style=&#34;color:#366&#34;&gt;{&lt;/span&gt;document&lt;span style=&#34;color:#366&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;为什么大家都在这里写“你好”啊……我一点也不好……而且也没有什么“你”……
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#069;font-weight:bold&#34;&gt;\end&lt;/span&gt;&lt;span style=&#34;color:#366&#34;&gt;{&lt;/span&gt;document&lt;span style=&#34;color:#366&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;用的编译命令是xelatex……&lt;/p&gt;
+&lt;p&gt;然后……要是提示缺少&lt;code&gt;Adobe Song Std&lt;/code&gt;什么的，应该&lt;code&gt;yaourt acroread-font-chinese-simplified&lt;/code&gt;就行了吧……&lt;/p&gt;
+&lt;p&gt;啊啊，从这个过程里，我好像看到了我短暂的人生……越是精于算计，就越可能出现意想不到的状况……&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;老子不做人了！TeTe！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;然后就想起这里还有一篇论文要写……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;世界末日没有来真是令人沮丧啊……我好想变成橙汁啊……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最后祝你身体健康，再见&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

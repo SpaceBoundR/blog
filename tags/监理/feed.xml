@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>监理 on 电子荒原</title>
+    <link>http://localhost:1313/tags/%E7%9B%91%E7%90%86/</link>
+    <description>Recent content in 监理 on 电子荒原</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy;召唤兽，&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Thu, 15 Dec 2022 22:47:11 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/%E7%9B%91%E7%90%86/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>下载装小蜜监理拍摄的图片</title>
+      <link>http://localhost:1313/2022/12/15/zhuangxiaomi-download-images/</link>
+      <pubDate>Thu, 15 Dec 2022 22:47:11 +0800</pubDate>
+      
+      <guid>http://localhost:1313/2022/12/15/zhuangxiaomi-download-images/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;最近，我家的装修终于告一段落，历时6个月，经验大概可以水三四篇博文——如果博主的拖延症能治好的话。今天先从最简单的部分开始。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;装小蜜是北京地区比较流行的监理服务，价格比起正规监理（有监理证的那种）要便宜许多，在装修过程中应该也是有作用的。每次上门服务时，监理会在每个房间拍一张全景照片，如果工长不提供水电位置图的话，之后这些照片应该能派上用场。&lt;/p&gt;
+&lt;p&gt;像所有Web2.0之后的公司一样，这家公司主要在APP和微信小程序上提供服务，而且并不具备数据导出功能。这种情况的一般解决方案是抓包，只要配置好xposed、HTTPCanary，解决TLS证书固定之类的问题就行了，我一开始就是这么做的，之后发现了别的方法：只要屏蔽一个特定域名（zxm-oss3.oss-cn-beijing.aliyuncs.com），微信小程序上就会显示图片的实际位置。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;url.png&#34; alt=&#34;图像实际存放地址&#34;&gt;&lt;/p&gt;
+&lt;p&gt;具体上，按照这里&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;的思路，我也使用Clash For Windows，把所有来自阿里云的请求屏蔽掉。然后在微信电脑版上打开小程序，就可以得到上图。之后，直接用鼠标把链接拖动到TXT里面，就可以用你最喜欢的工具下载了。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;proxies&lt;/span&gt;:&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;  &lt;/span&gt;- &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;name&lt;/span&gt;:&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;Fiddler&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;type&lt;/span&gt;:&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;http&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;server&lt;/span&gt;:&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#f60&#34;&gt;127.0.0.1&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;port&lt;/span&gt;:&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#f60&#34;&gt;8888&lt;/span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;proxy-groups&lt;/span&gt;:&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;  &lt;/span&gt;- &lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;name&lt;/span&gt;:&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;Proxy&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;proxies&lt;/span&gt;:&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;      &lt;/span&gt;- Fiddler&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;    &lt;/span&gt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;type&lt;/span&gt;:&lt;span style=&#34;color:#bbb&#34;&gt; &lt;/span&gt;select&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#309;font-weight:bold&#34;&gt;rules&lt;/span&gt;:&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;  &lt;/span&gt;- DOMAIN-KEYWORD,aliyuncs.com,REJECT&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;  &lt;/span&gt;- PROCESS-NAME,Fiddler.exe,DIRECT&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#bbb&#34;&gt;  &lt;/span&gt;- MATCH,DIRECT&lt;span style=&#34;color:#bbb&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;另外，小程序是用&lt;a href=&#34;https://pannellum.org/documentation/overview/&#34;&gt;Pannellum&lt;/a&gt;进行渲染的。下载到的照片可以用&lt;a href=&#34;https://renderstuff.com/tools/360-panorama-web-viewer/&#34;&gt;这个网站&lt;/a&gt;查看。好像和直接用小程序没有什么区别……&lt;/p&gt;
+&lt;h2 id=&#34;附微信小程序缓存位置&#34;&gt;附：微信小程序缓存位置&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;C:\Users\me\AppData\Roaming\Tencent\WeChat\radium\web&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我是用&lt;a href=&#34;https://learn.microsoft.com/en-us/sysinternals/downloads/procmon&#34;&gt;Process Monitor&lt;/a&gt;监测文件变化发现这个路径的。&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://zhuanlan.zhihu.com/p/564786074&#34;&gt;Windows 微信小程序无法抓包解决办法 - 知乎&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

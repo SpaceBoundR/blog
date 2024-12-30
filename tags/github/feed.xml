@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on 电子荒原</title>
+    <link>http://localhost:1313/tags/github/</link>
+    <description>Recent content in GitHub on 电子荒原</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy;召唤兽，&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 24 Dec 2021 19:29:52 +0800</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/github/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>我在GitHub的⭐</title>
+      <link>http://localhost:1313/2021/12/24/github-stars/</link>
+      <pubDate>Fri, 24 Dec 2021 19:29:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/2021/12/24/github-stars/</guid>
+      <description>&lt;p&gt;我想要去整理GitHub的star列表已经很久了。之前在&lt;del&gt;同性交友&lt;/del&gt;上网冲浪时，经常会看到各式各样的库。怀着一种“这个之后可能会用到”的心情，把它们一一加入列表，然后抛诸脑后。下次重新发现的时候，&lt;code&gt;starred&lt;/code&gt;状态仿佛是在嘲笑我一样。最近，正好有一个大项目的deadline横亘眼前，是做这种&lt;strong&gt;看似&lt;/strong&gt;有意义的事情的最好时间。&lt;/p&gt;
+&lt;p&gt;在看完283/473个项目后&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;，我意识到自己所说的整理，不过是把链接列表应用&lt;em&gt;猴子排序法&lt;/em&gt;而已，复杂度似乎并没有减少，花哨的图表、漂亮的分析更是一概欠奉。可能我应该回去干活儿了。&lt;/p&gt;
+&lt;p&gt;突然想起来，之前我好像说自己“很难有无聊的时候”，年轻真好啊。&lt;/p&gt;
+&lt;p&gt;高能预警：下面是一个超级长的列表，而且基本没有什么规律。粗体部分的是我之前用过的、感觉还不错的repo。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;网络&#34;&gt;网络&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;V**ay, S**s*ks, wallpr***y&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nmap/npcap&#34;&gt;nmap/npcap&lt;/a&gt;: Nmap Project&#39;s Windows packet capture and transmission library&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/gsliepen/tinc&#34;&gt;gsliepen/tinc&lt;/a&gt;&lt;/strong&gt;: a VPN daemon&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/coolsnowwolf/lede&#34;&gt;coolsnowwolf/lede&lt;/a&gt;: Lean&#39;s OpenWrt source&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/zfl9/ss-tproxy&#34;&gt;zfl9/ss-tproxy&lt;/a&gt;: 搭建透明代理环境的简易脚本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;dns&#34;&gt;DNS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/zfl9/chinadns-ng&#34;&gt;zfl9/chinadns-ng&lt;/a&gt; - chinadns next generation, refactoring with epoll and ipset&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/felixonmars/dnsmasq-china-list&#34;&gt;felixonmars/dnsmasq-china-list&lt;/a&gt; - Chinese-specific configuration to improve your favorite DNS server. Best partner for chnroutes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;软件&#34;&gt;软件&lt;/h2&gt;
+&lt;h3 id=&#34;实用软件&#34;&gt;实用软件&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个分类就好像华军软件园一样……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/borgbackup/borg&#34;&gt;borgbackup/borg&lt;/a&gt;: Deduplicating archiver with compression and authenticated encryption.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我用RSync就够了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/syncthing/syncthing&#34;&gt;syncthing/syncthing&lt;/a&gt;&lt;/strong&gt;: Open Source Continuous File Synchronization&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/hluk/CopyQ&#34;&gt;hluk/CopyQ&lt;/a&gt;: Clipboard manager with advanced features&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/huginn/huginn&#34;&gt;huginn/huginn&lt;/a&gt;: Create agents that monitor and act on your behalf. Your agents are standing by!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/keepassxreboot/keepassxc&#34;&gt;keepassxreboot/keepassxc.&lt;/a&gt;&lt;/strong&gt;: KeePassXC is a cross-platform community-driven port of the Windows application “Keepass Password Safe”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/chriszarate/supergenpass&#34;&gt;chriszarate/supergenpass&lt;/a&gt;: A free bookmarklet password generator.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果不想使用弱密码，除了使用密码管理器之外的其他选择&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/LionelJouin/PiP-Tool&#34;&gt;LionelJouin/PiP-Tool&lt;/a&gt;: PiP tool is a software to use the Picture in Picture mode on Windows. This feature allows you to watch content (video for example) in thumbnail format on the screen while continuing to use any other software on Windows.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cheat-engine/cheat-engine&#34;&gt;cheat-engine/cheat-engine&lt;/a&gt;: Cheat Engine. A development environment focused on modding&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/ActivityWatch/activitywatch&#34;&gt;ActivityWatch/activitywatch&lt;/a&gt;: The best free and open-source automated time tracker. Cross-platform, extensible, privacy-focused.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;下载&#34;&gt;下载&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nicotine-plus/nicotine-plus&#34;&gt;nicotine-plus/nicotine-plus&lt;/a&gt;: Graphical client for the Soulseek peer-to-peer network&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/idlesign/torrentool&#34;&gt;idlesign/torrentool&lt;/a&gt;: The tool to work with torrent files.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ngosang/trackerslist&#34;&gt;ngosang/trackerslist&lt;/a&gt;: Updated list of public BitTorrent trackers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ytdl-org/youtube-dl&#34;&gt;ytdl-org/youtube-dl&lt;/a&gt;: Command-line program to download videos from YouTube.com and other video sites&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mayswind/AriaNg&#34;&gt;mayswind/AriaNg&lt;/a&gt;: AriaNg, a modern web frontend making aria2 easier to use.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;阅读与学习&#34;&gt;阅读与学习&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/tachiyomiorg/tachiyomi&#34;&gt;tachiyomiorg/tachiyomi&lt;/a&gt;&lt;/strong&gt;: Free and open source manga reader for Android.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/goldendict/goldendict&#34;&gt;goldendict/goldendict&lt;/a&gt;&lt;/strong&gt;: A feature-rich dictionary lookup program, supporting multiple dictionary formats (StarDict/Babylon/Lingvo/Dictd) and online dictionaries, featuring perfect article rendering with the complete markup, illustrations and other content retained, and allowing you to type in words without any accents or correct case.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/markummitchell/engauge-digitizer&#34;&gt;markummitchell/engauge-digitizer&lt;/a&gt;:&lt;/strong&gt; Extracts data points from images of graphs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/koreader/koreader&#34;&gt;koreader/koreader&lt;/a&gt;:&lt;/strong&gt; An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/kovidgoyal/calibre&#34;&gt;kovidgoyal/calibre&lt;/a&gt;:&lt;/strong&gt; The calibre ebook manager&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/buggins/coolreader&#34;&gt;buggins/coolreader&lt;/a&gt;: Official site of CoolReader project. Sourceforge repository is obsolete.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;系统&#34;&gt;系统&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/Maximus5/ConEmu&#34;&gt;Maximus5/ConEmu&lt;/a&gt;&lt;/strong&gt;: Customizable Windows terminal with tabs, splits, quake-style, hotkeys and more&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ohmyzsh/ohmyzsh&#34;&gt;ohmyzsh/ohmyzsh&lt;/a&gt;: 🙃 A delightful community-driven (with 1900+ contributors) framework for managing your zsh configuration.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/farseerfc/pacvis&#34;&gt;farseerfc/pacvis&lt;/a&gt;: Visualize pacman local database using Vis.js, inspired by pacgraph.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Askannz/optimus-manager&#34;&gt;Askannz/optimus-manager&lt;/a&gt;: A Linux program to handle GPU switching on Optimus laptops.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;rss-reader&#34;&gt;RSS reader&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Athou/commafeed&#34;&gt;Athou/commafeed&lt;/a&gt; - Google Reader inspired self-hosted RSS reader.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/samuelclay/NewsBlur&#34;&gt;samuelclay/NewsBlur&lt;/a&gt;: NewsBlur is a personal news reader that brings people together to talk about the world. A new sound of an old instrument.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;编辑器笔记&#34;&gt;编辑器、笔记&lt;/h2&gt;
+&lt;h3 id=&#34;standalone&#34;&gt;standalone&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/laurent22/joplin&#34;&gt;laurent22/joplin&lt;/a&gt;&lt;/strong&gt;: Joplin - an open source note taking and to-do application with synchronization capabilities for Windows, macOS, Linux, Android and iOS
+&lt;blockquote&gt;
+&lt;p&gt;我现在在用的笔记软件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;浏览器端&#34;&gt;浏览器端&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/benweet/stackedit&#34;&gt;benweet/stackedit&lt;/a&gt; - In-browser Markdown editor&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Vanessa219/vditor&#34;&gt;Vanessa219/vditor&lt;/a&gt; - ♏ 一款浏览器端的 Markdown 编辑器，支持所见即所得（富文本）、即时渲染（类似 Typora）和分屏预览模式。An In-browser Markdown editor, support WYSIWYG (Rich Text), Instant Rendering (Typora-like) and Split View modes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;博客&#34;&gt;博客&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gohugoio/hugo&#34;&gt;gohugoio/hugo&lt;/a&gt;: The world’s fastest framework for building websites.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/matrixk/bitcron-theme-plain&#34;&gt;matrixk/bitcron-theme-plain&lt;/a&gt;: Bitcron主题「素」&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yihui/hugo-xmin&#34;&gt;yihui/hugo-xmin&lt;/a&gt;: eXtremely Minimal Hugo theme: about 150 lines of code in total, including HTML and CSS (with no dependencies)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/neoFelhz/hexo-theme-spectre&#34;&gt;neoFelhz/hexo-theme-spectre&lt;/a&gt;: A modern, simple &amp;amp; elegant theme for Hexo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/shuibaco/bitcron-themes&#34;&gt;shuibaco/bitcron-themes&lt;/a&gt;: Bitcron主题集&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/xianmin/hugo-theme-jane&#34;&gt;xianmin/hugo-theme-jane&lt;/a&gt;: A readable &amp;amp; concise theme for Hugo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tipsy/profile-summary-for-github&#34;&gt;tipsy/profile-summary-for-github&lt;/a&gt;: Tool for visualizing GitHub profiles&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tuna/blogroll&#34;&gt;tuna/blogroll&lt;/a&gt;: 世界一流兼容并包TUNA协会收集的周围同学们的Blog&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;资料&#34;&gt;资料&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/zh-google-styleguide/zh-google-styleguide&#34;&gt;zh-google-styleguide/zh-google-styleguide&lt;/a&gt; - Google 开源项目风格指南 (中文版)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/AlloyTeam/Mars&#34;&gt;AlloyTeam/Mars&lt;/a&gt; - 腾讯移动 Web 前端知识库&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/codepath/android_guides&#34;&gt;codepath/android_guides&lt;/a&gt;: Extensive Open-Source Guides for Android Developers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/facert/python-data-structure-cn&#34;&gt;facert/python-data-structure-cn&lt;/a&gt;: problem-solving-with-algorithms-and-data-structure-using-python 中文版&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/xiaolai/time-as-a-friend&#34;&gt;xiaolai/time-as-a-friend&lt;/a&gt;&lt;/strong&gt;: 《把时间当作朋友》&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/selfteaching/the-craft-of-selfteaching&#34;&gt;selfteaching/the-craft-of-selfteaching&lt;/a&gt;: 《自学是门手艺》One has no future if one couldn&#39;t teach themself.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;嵌入式&#34;&gt;嵌入式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/micropython/micropython&#34;&gt;micropython/micropython&lt;/a&gt; - MicroPython - a lean and efficient Python implementation for microcontrollers and constrained systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;新创意diy&#34;&gt;新创意、DIY&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/divan/txqr&#34;&gt;divan/txqr&lt;/a&gt;: Transfer data via animated QR codes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pywinauto/pywinauto&#34;&gt;pywinauto/pywinauto&lt;/a&gt;: Windows GUI Automation with Python (based on text properties)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/kholia/OSX-KVM&#34;&gt;kholia/OSX-KVM&lt;/a&gt;: Run macOS on QEMU/KVM. With OpenCore + Big Sur + Monterey support now! Only commercial (paid) support is available now to avoid spammy issues. No Mac system is required.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/OSCARAdapter/OSCAR&#34;&gt;OSCARAdapter/OSCAR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Emeryth/iPad3_lcd&#34;&gt;Emeryth/iPad3_lcd&lt;/a&gt;: A PCB for attaching an iPad retina LCD to a DisplayPort source
+&lt;blockquote&gt;
+&lt;p&gt;我有一块iPad3用的屏幕，我尝试着把它利用起来，最后买了一块驱动板&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;javascript-用来做网页的&#34;&gt;&lt;del&gt;Javascript&lt;/del&gt; 用来做网页的&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/codemirror/CodeMirror&#34;&gt;codemirror/CodeMirror&lt;/a&gt; - In-browser code editor&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js&#34;&gt;hakimel/reveal.js&lt;/a&gt; - The HTML Presentation Framework&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ecomfe/fontmin&#34;&gt;ecomfe/fontmin&lt;/a&gt; - Minify font seamlessly&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/lokesh/color-thief&#34;&gt;lokesh/color-thief&lt;/a&gt;&lt;/strong&gt;: Grab the color palette from an image using just Javascript. Works in the browser and in Node.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/KyleAMathews/typography.js&#34;&gt;KyleAMathews/typography.js&lt;/a&gt;: A powerful toolkit for building websites with beautiful design&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sofish/typo.css&#34;&gt;sofish/typo.css&lt;/a&gt;: 中文网页重设与排版：一致化浏览器排版效果，构建最适合中文阅读的网页排版&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/zenozeng/fonts.css&#34;&gt;zenozeng/fonts.css&lt;/a&gt;: 跨平台 CSS 中文字体解决方案&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/beizhedenglong/weird-fonts&#34;&gt;beizhedenglong/weird-fonts&lt;/a&gt;: 𝑨 𝑱𝒂𝒗𝒂𝑺𝒄𝒓𝒊𝒑𝒕 𝒑𝒂𝒄𝒌𝒂𝒈𝒆 𝒕𝒉𝒂𝒕 𝒕𝒖𝒓𝒏 𝒂𝒍𝒑𝒉𝒂𝒏𝒖𝒎𝒆𝒓𝒊𝒄 𝒄𝒉𝒂𝒓𝒂𝒄𝒕𝒆𝒓𝒔 𝒊𝒏𝒕𝒐 𝒘𝒆𝒊𝒓𝒅 𝒇𝒐𝒏𝒕 𝒔𝒕𝒚𝒍𝒆.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mozilla/readability&#34;&gt;mozilla/readability&lt;/a&gt;: A standalone version of the readability lib&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;material-design-for-webpage&#34;&gt;Material Design for webpage&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mui-org/material-ui&#34;&gt;mui-org/material-ui&lt;/a&gt;: MUI (formerly Material-UI) is the React UI library you always wanted. Follow your own design system, or start with Material Design.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mdbootstrap/mdb-ui-kit&#34;&gt;mdbootstrap/mdb-ui-kit&lt;/a&gt;: Bootstrap 5 &amp;amp; Material Design 2.0 UI KIT&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/google/material-design-lite&#34;&gt;google/material-design-lite&lt;/a&gt;: Material Design Components in HTML/CSS/JS
+&lt;blockquote&gt;
+&lt;p&gt;最先被干掉的一个？当然是Google自己的了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Dogfalo/materialize&#34;&gt;Dogfalo/materialize&lt;/a&gt;: Materialize, a CSS Framework based on Material Design&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;图片素材美术&#34;&gt;图片、素材、美术&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/NelsonMinar/vector-river-map&#34;&gt;NelsonMinar/vector-river-map&lt;/a&gt; - Tutorial project demonstrating making a web map with vector tiles&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/NYPL-publicdomain/api-client&#34;&gt;NYPL-publicdomain/api-client&lt;/a&gt;: API client and Node.js module to access the NYPL Digital Collections API&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/piskelapp/piskel&#34;&gt;piskelapp/piskel&lt;/a&gt; - A simple web-based tool for Spriting and Pixel art.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/aseprite/aseprite&#34;&gt;aseprite/aseprite&lt;/a&gt;: Animated sprite editor &amp;amp; pixel art tool (Windows, macOS, Linux)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;字体&#34;&gt;字体&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/braver/programmingfonts&#34;&gt;braver/programmingfonts&lt;/a&gt;&lt;/strong&gt;: Test drive programming fonts online&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/be5invis/Iosevka&#34;&gt;be5invis/Iosevka&lt;/a&gt;: Versatile typeface for code, from code.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/snowie2000/mactype&#34;&gt;snowie2000/mactype&lt;/a&gt;: Better font rendering for Windows.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;时髦的深度学习以及大数据&#34;&gt;时髦的深度学习、以及大数据&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nagadomi/waifu2x&#34;&gt;nagadomi/waifu2x&lt;/a&gt;: Image Super-Resolution for Anime-Style Art&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/lltcggie/waifu2x-caffe&#34;&gt;lltcggie/waifu2x-caffe&lt;/a&gt;: waifu2xのCaffe版&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/luanfujun/deep-photo-styletransfer&#34;&gt;luanfujun/deep-photo-styletransfer: Code and data for paper &amp;quot;Deep Photo Style Transfer&amp;quot;: https://arxiv.org/abs/1703.07511&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/NVlabs/stylegan&#34;&gt;NVlabs/stylegan&lt;/a&gt;: StyleGAN - Official TensorFlow Implementation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ConnorJL/GPT2&#34;&gt;ConnorJL/GPT2: An implementation of training for GPT2, supports TPUs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/brightmart/nlp_chinese_corpus&#34;&gt;brightmart/nlp_chinese_corpus&lt;/a&gt;: 大规模中文自然语言处理语料 Large Scale Chinese Corpus for NLP&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/chinese-poetry/chinese-poetry&#34;&gt;chinese-poetry/chinese-poetry&lt;/a&gt;: The most comprehensive database of Chinese poetry 🧶最全中华古诗词数据库, 唐宋两朝近一万四千古诗人, 接近5.5万首唐诗加26万宋诗. 两宋时期1564位词人，21050首词。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/huggingface/transformers&#34;&gt;huggingface/transformers&lt;/a&gt;: 🤗 Transformers: State-of-the-art Machine Learning for Pytorch, TensorFlow, and JAX.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ocr&#34;&gt;OCR&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/lukas-blecher/LaTeX-OCR&#34;&gt;LaTeX-OCR&lt;/a&gt;&lt;/strong&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个很好用的，我一直想把这玩意打包成一个可执行文件……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/PaddlePaddle/PaddleOCR/blob/release/2.3/README_ch.md&#34;&gt;PaddleOCR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/DayBreak-u/chineseocr_lite/tree/master&#34;&gt;chineseocr_lite&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;上面两个的中文识别率是比较高的，不像Tesseract
+对了，这两个都有Android客户端Demo，基本上开箱即用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/tesseract-ocr/tesseract&#34;&gt;tesseract-ocr/tesseract&lt;/a&gt;: Tesseract Open Source OCR Engine (main repository)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/naptha/tesseract.js&#34;&gt;naptha/tesseract.js&lt;/a&gt;: Pure Javascript OCR for more than 100 Languages 📖🎉🖥&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/breezedeus/cnocr&#34;&gt;breezedeus/cnocr&lt;/a&gt;: 基于 PyTorch/MXNet 的中文/英文 OCR Python 包&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;量化与虚拟货币&#34;&gt;量化与虚拟货币&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;谁都有年轻的时候……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ccxt/ccxt&#34;&gt;ccxt/ccxt&lt;/a&gt;: A JavaScript / Python / PHP cryptocurrency trading API with support for more than 100 bitcoin/altcoin exchanges&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/barnumbirr/coinmarketcap&#34;&gt;barnumbirr/coinmarketcap: A python wrapper around the https://coinmarketcap.com API.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/talolard/MarketVectors&#34;&gt;talolard/MarketVectors&lt;/a&gt;: Implementations for my blog post &lt;a href=&#34;https://medium.com/@TalPerry/deep-learning-the-stock-market-df853d139e02#.flflpo3xf&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/binance-exchange/python-binance&#34;&gt;binance-exchange/python-binance: Binance API python implementation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mementum/backtrader&#34;&gt;mementum/backtrader&lt;/a&gt;: Python Backtesting library for trading strategies&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/myquant/strategy&#34;&gt;myquant/strategy&lt;/a&gt;: 掘金策略集锦&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/BenjiKCF/Neural-Net-with-Financial-Time-Series-Data&#34;&gt;BenjiKCF/Neural-Net-with-Financial-Time-Series-Data&lt;/a&gt;: This solution presents an accessible, non-trivial example of machine learning (Deep learning) with financial time series using TensorFlow&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/alexavierc/LSTM-Stock-Prices&#34;&gt;alexavierc/LSTM-Stock-Prices&lt;/a&gt;: This project goal is to demonstrate how to use LSTM networks and apply in some real data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;awesome-list-of-awesome&#34;&gt;Awesome list of Awesome&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/awesome-selfhosted/awesome-selfhosted&#34;&gt;awesome-selfhosted/awesome-selfhosted&lt;/a&gt;: A list of Free Software network services and web applications which can be hosted on your own servers&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/thuquant/awesome-quant&#34;&gt;thuquant/awesome-quant&lt;/a&gt;: 中国的Quant相关资源索引&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/awesomedata/awesome-public-datasets&#34;&gt;awesomedata/awesome-public-datasets&lt;/a&gt;: A topic-centric list of HQ open datasets.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;nostalgia&#34;&gt;Nostalgia&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/atom/atom&#34;&gt;atom/atom&lt;/a&gt;&lt;/strong&gt; - :atom: The hackable text editor&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/spf13-vim&#34;&gt;spf13/spf13-vim&lt;/a&gt; - The ultimate vim distribution&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/smore-inc/clippy.js&#34;&gt;smore-inc/clippy.js&lt;/a&gt; - Add Clippy or his friends to any website for instant nostalgia.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/microsoft/winfile&#34;&gt;microsoft/winfile&lt;/a&gt; - Original Windows File Manager (winfile) with enhancements&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/5digits/dactyl&#34;&gt;5digits/dactyl&lt;/a&gt;&lt;/strong&gt;: Pentadactyl and other related Gecko extensions
+&lt;blockquote&gt;
+&lt;p&gt;后来再也没有能够达到同样高度的扩展了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/felixrieseberg/windows95&#34;&gt;felixrieseberg/windows95&lt;/a&gt;: 💩🚀 Windows 95 in Electron. Runs on macOS, Linux, and Windows.
+&lt;blockquote&gt;
+&lt;p&gt;这个是&lt;strong&gt;真家伙&lt;/strong&gt;，不是随便画几个网页的那种&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;意犹未尽？最新的180个⭐将在近期列出！敬请期待第二部！&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;给自己的note：我这次看到&lt;a href=&#34;https://github.com/nondanee/UnblockNeteaseMusic&#34;&gt;这个&lt;/a&gt;位置了&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

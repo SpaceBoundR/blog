@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Acg on 电子荒原</title>
+    <link>http://localhost:1313/tags/acg/</link>
+    <description>Recent content in Acg on 电子荒原</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>&amp;copy;召唤兽，&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 19 Apr 2013 13:50:50 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/acg/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Limited Gear Works</title>
+      <link>http://localhost:1313/2013/04/19/limited-gear-works/</link>
+      <pubDate>Fri, 19 Apr 2013 13:50:50 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2013/04/19/limited-gear-works/</guid>
+      <description>&lt;p&gt;总之是一个画齿轮的canvas， &lt;em&gt;没用&lt;/em&gt; 而且&lt;strong&gt;速度慢&lt;/strong&gt;，不过最终至少像那么回事了。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://heyeshuang.github.io/LGW/&#34;&gt;地址&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>html5-世界变动率计数器（仮）</title>
+      <link>http://localhost:1313/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%EF%BC%88%E4%BB%AE%EF%BC%89/</link>
+      <pubDate>Sat, 14 Jul 2012 08:32:13 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2012/07/14/html5-%E4%B8%96%E7%95%8C%E5%8F%98%E5%8A%A8%E7%8E%87%E8%AE%A1%E6%95%B0%E5%99%A8%EF%BC%88%E4%BB%AE%EF%BC%89/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://pylab-heysh.rhcloud.com/static/canvas2.html&#34; title=&#34;世界变动率计数器&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其实这个东西做好已经有小半个月了，但是后来又是mc又是出去玩什么的就忘了管……但是颓废下去终究是不对的，所以我又回来了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;代码简单到自己都觉得没有开project的必要，但是就这么点东西就折腾了好长时间，中途还把整个砍掉重练。我果然还是太年轻（?）\&lt;/p&gt;
+&lt;p&gt;如果有需要，请自行抓站，能署名的话本人当然会更高兴。&lt;/p&gt;
+&lt;p&gt;update 2012-9-11：\&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://heyeshuang.github.com/Divergence-Meter/&#34; title=&#34;Divergence-Meter&#34;&gt;github page&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
