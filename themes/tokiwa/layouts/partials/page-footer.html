@@ -1,0 +1,54 @@
+<hr class="double-line" />
+<div class="flex flex-wrap justify-between pb-2 leading-loose font-serif">
+    {{with .Site.RegularPages.Prev . }}
+    <a class="flex-grow-0" href="{{.RelPermalink}}">
+        <svg class="fill-current inline-block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+            height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z" />
+        </svg>
+        {{.Title}}
+    </a>
+    {{end}}
+    {{with .Site.RegularPages.Next . }}
+    <a class="flex-grow-0" href="{{.RelPermalink}}">
+        {{.Title}}
+        <svg class="fill-current inline-block h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+            height="24">
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+        </svg></a>
+    {{end}}
+</div>
+<div>
+    {{ $related := .Site.RegularPages.Related . | first 15 }}
+    {{ $count := len $related }}
+    {{ with $related }}
+    <div class="font-serif pb-2 flex align-start leading-loose">
+        <span class="heading pr-6 leading-loose">Related</span>
+        <span>
+            {{ range $k, $v := . }}
+            <a href="{{ $v.RelPermalink }}">
+                {{- $v.Title -}}
+            </a>{{ if lt $k (sub $count 1) }}&nbsp;&nbsp;&#47;&nbsp;{{end}}
+            {{ end }}
+        </span>
+    </div>
+    {{ end }}
+</div>
+<hr />
+<div class="pb-2">
+    <!-- {{ template "_internal/disqus.html" . }} -->
+    <div id="tcomment"></div>
+    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.40/dist/twikoo.all.min.js"></script>
+    <script>
+        twikoo.init({
+            envId: 'https://twikoo-cloudflare.r3-rxw.workers.dev', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+            el: '#tcomment', // 容器元素
+            // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+            // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+            // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
+        })
+    </script>
+</div>
+<hr />

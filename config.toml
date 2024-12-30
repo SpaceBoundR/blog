@@ -1,0 +1,101 @@
+baseURL = "https://blog.ruixinwu.com/"
+languageCode = "zh-cn"
+title = "电子荒原"
+theme = "tokiwa"
+copyright = "&copy;召唤兽，<a href=\"https://creativecommons.org/licenses/by-nc/4.0/\">CC BY-NC 4.0</a>"
+hasCJKLanguage = true
+author = "召唤兽"
+# Shown in the side menu
+canonifyurls = false
+paginate = 10
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = 'manni'
+# pygmentsUseClasses=true
+
+googleAnalytics = "G-CWBXLVG90W"
+disqusShortname = "heysh"
+# pygmentsOptions = "linenos=table,noclasses=true"
+[markup.goldmark]
+  [markup.goldmark.extensions]
+    typographer = false
+  [markup.goldmark.renderer]
+    unsafe= true
+[permalinks]
+  post = "/:year/:month/:day/:filename/"
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
+
+[indexes]
+  tag = "tags"
+  topic = "categories"
+
+[params]
+  math = true
+  env = "production"
+  description = """
+  星河下/电子荒原<br>
+  亿万场冷暖/亿万泥污人
+  """
+  favicon = "img/favicon1.png"
+  fuse = true 
+  useChineseFonts = true
+  bannerFont = "fonts/LXGWWenKai-Regular"
+  postDateFormat = "2006-01-02"
+
+[menu]
+# Shown in the side menu.
+  [[menu.main]]
+    name = "归档"
+    identifier = "post"
+    url = "/post/"
+    weight = 1
+  [[menu.main]]
+    name = "标签"
+    url = "/tags/"
+    weight = 2
+
+  [[menu.main]]
+    name = "分类"
+    url = "/categories/"  
+    weight = 2
+
+  [[menu.main]]
+    name = "关于"
+    identifier = "about"
+    url = "/about/"
+    weight = 3
+
+  [[menu.main]]
+    name = "内心戏"
+    identifier = "sentences"
+    url = "/sentences/"
+    weight = 4
+
+  [[menu.main]]
+    name = "云乞讨"
+    identifier = "begging"
+    weight = 4
+    url = "/wallet/"
+  [[menu.main]]
+    name = "芽"
+    identifier = "home"
+    url = "https://heysh.xyz/"
+    weight = 5
+
+[params.social]
+  # Link your social networking accounts to the side menu
+  # by entering your username or ID.
+
+  # SNS microblogging
+  twitter = "https://twitter.com/heyeshuang"
+  # googleplus = "贺叶霜HeYSH"
+
+  # Techie
+  github = "https://github.com/heyeshuang"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
